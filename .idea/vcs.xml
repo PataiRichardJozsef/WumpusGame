@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Wumpus_porject/Wumpus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WumpusGame" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Wumpus_porject" vcs="Git" />
   </component>
 </project>

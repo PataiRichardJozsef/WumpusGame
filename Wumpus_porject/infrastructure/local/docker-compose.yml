@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  postgres:
+    container_name: wumpusz_postgres
+    image: postgres:13.4-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: wumpusz
+      POSTGRES_PASSWORD: wumpusz
+      POSTGRES_DB: wumpusz
+    ports:
+      - 5432:5432
+    command: postgres -c 'max_connections=50'
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
